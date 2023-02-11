@@ -1,5 +1,7 @@
 #revised/fixed version from https://youtu.be/xrHOqasnoyA
-
+import os
+import json
+import requests 
 import discord
 from discord import app_commands 
 
@@ -23,3 +25,7 @@ async def slash2(interaction: discord.Interaction):
     await interaction.response.send_message(f"I am working! I was made with Discord.py!", ephemeral = True) 
 
 client.run('token')
+
+@client.event
+async def on_ready
+    awit client.change_presence(status=discord.status.idle)
