@@ -28,4 +28,4 @@ client.run('token')
 
 @client.event
 async def on_ready
-    awit client.change_presence(status=discord.status.idle)
+    await client.change_presence(status=discord.status.idle)
